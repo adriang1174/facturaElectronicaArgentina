@@ -2,7 +2,7 @@
 
 class WSFE {
 
-  const CUIT = "30708235284";                 # CUIT del emisor de las facturas
+  const CUIT = "20177397203";                 # CUIT del emisor de las facturas
   const TA =    "xmlgenerados/TA.xml";        # Archivo con el Token y Sign
   const WSDL = "wsfe.wsdl";                   # The WSDL corresponding to WSFE
   const CERT = "keys/ghf.crt";                # The X.509 certificate in PEM format

@@ -11,15 +11,15 @@ require 'wsfe.class.php';
 $wsaa = new WSAA('./'); 
 
 
-if($wsaa->get_expiration() < date("Y-m-d h:m:i")) {
+//if($wsaa->get_expiration() < date("Y-m-d h:m:i")) {
   if ($wsaa->generar_TA()) {
     echo 'obtenido nuevo TA';  
   } else {
     echo 'error al obtener el TA';
   }
-} else {
-  echo $wsaa->get_expiration();
-};
+//} else {
+//  echo $wsaa->get_expiration();
+//};
 
 
 
@@ -34,7 +34,7 @@ $wsfe = new WSFE('./');
 // Carga el archivo TA.xml
 $wsfe->openTA();
 
-//$wsfe->getTiposDoc();
+$wsfe->getTiposDoc();
  
   
 // devuelve el cae
@@ -43,7 +43,7 @@ $tipocbte = 1;
                    
 // registro con los datos de la factura
 $regfac['tipo_doc'] = 80;
-$regfac['nro_doc'] = 23111111112;
+$regfac['nro_doc'] = 60362;
 $regfac['imp_total'] = 121.67;
 $regfac['imp_tot_conc'] = 0;
 $regfac['imp_neto'] = 100.55;
