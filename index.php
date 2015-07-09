@@ -32,9 +32,12 @@ $wsfe = new WSFE('./');
  
  
 // Carga el archivo TA.xml
-$wsfe->openTA();
+if($wsfe->openTA())
+	echo "WSFE open TA OK";
+else
+	echo "WSFE open TA Error";
 
-$wsfe->getTiposDoc();
+//$wsfe->getTiposDoc();
  
   
 // devuelve el cae

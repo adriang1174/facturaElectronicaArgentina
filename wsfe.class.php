@@ -10,7 +10,7 @@ class WSFE {
   const PASSPHRASE = "";                      # The passphrase (if any) to sign
   const PROXY_ENABLE = false;
   const LOG_XMLS = false;                     # For debugging purposes
-  const WSFEURL = "https://wswhomo.afip.gov.ar/wsfe/service.asmx"; // testing
+  const WSFEURL = "https://wswhomo.afip.gov.ar/wsfev1/service.asmx"; // testing
   //const WSFEURL = "?????????????????"; // produccion  
 
   
@@ -126,6 +126,7 @@ class WSFE {
                               'Sign' => $this->TA->credentials->sign,
                               'cuit' => self::CUIT)));
     
+    var_dump($results);
     $e = $this->_checkErrors($results, 'FEUltNroRequest');
         
     return $e == false ? $results->FEUltNroRequestResult->nro->value : false;
@@ -159,7 +160,7 @@ class WSFE {
     $results = $this->client->FEParamGetTiposDoc($params);
     
     //this->_checkErrors($results, 'FEParamGetTiposDoc');
-    
+    var_dump($results);
     $X=$results->FEParamGetTiposDocResult;
     //$fh=fopen("TiposDoc.txt","w");
     foreach ($X->ResultGet->DocTipo AS $Y) {
