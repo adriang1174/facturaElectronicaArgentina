@@ -55,8 +55,8 @@ $regfac['impto_liq_rni'] = 0.0;
 $regfac['imp_op_ex'] = 0.0;
 $regfac['fecha_venc_pago'] = date('Ymd');
 
-$nro = $wsfe->ultNro();
-if($nro == false) echo "erorrrrrrr ultNro";
+//$nro = $wsfe->ultNro();
+//if($nro == false) echo "erorrrrrrr ultNro";
 
 $cmp = $wsfe->recuperaLastCMP($ptovta, $tipocbte);
 if($cmp == false) echo "erorrrrrrr cmppp";

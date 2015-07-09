@@ -137,13 +137,15 @@ class WSFE {
    */ 
   public function recuperaLastCMP ($ptovta)
   {
-    $results = $this->client->FERecuperaLastCMPRequest(
-      array('argAuth' =>  array('Token'    => $this->TA->credentials->token,
+    //$results = $this->client->FERecuperaLastCMPRequest(
+     $results = $this->client->FECompUltimoAutorizado(
+     array('argAuth' =>  array('Token'    => $this->TA->credentials->token,
                                 'Sign'     => $this->TA->credentials->sign,
                                 'cuit'     => self::CUIT),
              'argTCMP' => array('PtoVta'   => $ptovta,
                                 'TipoCbte' => $this->tipo_cbte)));
                                 
+    var_dump($results);
     $e = $this->_checkErrors($results, 'FERecuperaLastCMPRequest');
     
     return $e == false ? $results->FERecuperaLastCMPRequestResult->cbte_nro : false;
