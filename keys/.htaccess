@@ -1,4 +1,0 @@
-<Directory /var/SIRIUS/gestiontesting/afip/keys>
-Order allow,deny
-Deny from all
-</Directory>

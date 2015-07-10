@@ -212,21 +212,21 @@ class WSFE {
                      'MonId' => 1,
                      'MonCotiz' => 1,
 	                 'CbtesAsoc' => array(
-	                	'Tipo' =>,
+	                	'Tipo' => 0,
 	                	'PtoVta' => $ptovta,
-	                	'Nro' =>
+	                	'Nro' => 0
 	                  ),
 	                 'Tributos' => array(
-	                	'Id' =>,
-	                	'Desc' =>,
-	                	'BaseImp' =>,
-	                	'Alic' =>,
-	                	'Importe' =>
+	                	'Id' => 0,
+	                	'Desc' => '',
+	                	'BaseImp' => 0,
+	                	'Alic' => 0,
+	                	'Importe' => 0
 	                  ),
 	                 'IVA' => array(
-	                	'Id' =>,
-		               	'BaseImp' =>,
-	                   	'Importe' =>
+	                	'Id' => 0,
+		               	'BaseImp' => 0,
+	                   	'Importe' => 0
 	                  )
 	                
                      )//FECAEDetRequest
