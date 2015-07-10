@@ -71,8 +71,8 @@ if($cmp == false) echo "erorrrrrrr cmppp";
 
 $regfac['DocTipo'] = 80; //El cuit del comprador 
 $regfac['DocNro']  = 23111111112;
-$regfac['CbteDesde'] = 3;
-$regfac['CbteHasta'] = 4;
+$regfac['CbteDesde'] = 1;
+$regfac['CbteHasta'] = 2;
 $regfac['ImpTotal'] = 121.67; //La suma de todos los totales
 $regfac['ImpTotConc'] = 0; 
 $regfac['ImpNeto'] = 100.55;
@@ -81,7 +81,8 @@ $regfac['ImpIVA'] = 21.12;
 $regfac['ImpTrib'] = 0.0;
 $regfac['FchVtoPago'] = '20150709';
 
-$cae = $wsfe->aut( 2, 1, 1, $regfac);
+$cbtes = array(array('Tipo'=>1,'PtoVta'=>1,'Nro'=>1),array('Tipo'=>1,'PtoVta'=>1,'Nro'=>1));
+$cae = $wsfe->aut( 2, 1, 1, $regfac,$cbtes);
 
 //if($cae == false) echo "erorrrrrrr Caeee";
 
