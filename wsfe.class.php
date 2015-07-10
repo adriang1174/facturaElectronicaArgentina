@@ -245,8 +245,9 @@ class WSFE {
   }
 
   // Dado un lote de comprobantes retorna el mismo autorizado con el CAE otorgado.
-  public function aut( $cbte, $ptovta, $regfac)
-  {
+  public function aut( $cantreg, $cbtetipo, $ptovta, $regfac)
+  { 
+    
     $results = $this->client->FECAESolicitar(
       array('Auth' => array(
                'Token' => $this->TA->credentials->token,
@@ -254,44 +255,27 @@ class WSFE {
                'Cuit'  => self::CUIT),
             'FeCAEReq' => array(
                'FeCabReq' => array(
-                  'CantReg' => 1, 
+                  'CantReg' => $cantreg, 
                   'PtoVta' => $ptovta,
-                  'CbteTipo' => $cbte,
+                  'CbteTipo' => $cbtetipo,
                   ),
                'FeDetReq' => array(
                    'FECAEDetRequest' => array(
                      'Concepto' => 1,
-                     'DocTipo' => $regfac['tipo_doc'],
-                     'DocNro' => $regfac['nro_doc'],
-	                 'CbteDesde' => $cbte,
-                     'CbteHasta' => $cbte,
+                     'DocTipo' => $regfac['DocTipo'],
+                     'DocNro' => $regfac['DocNro'],
+	                 'CbteDesde' => $regfac['CbteDesde'],
+                     'CbteHasta' => $regfac['CbteHasta'],
                      'CbteFch' => date('Ymd'),
-                     'ImpTotal' => $regfac['imp_total'],
-                     'ImpTotConc' => $regfac['imp_tot_conc'],
-                     'ImpNeto' => $regfac['imp_neto'],
-                     'ImpOpEx' => $regfac['imp_op_ex'],
-                     'ImpIVA' => $regfac['impto_liq'],
-                     'ImpTrib' => $regfac['impto_liq_rni'],
-                     'FchVtoPago' => $regfac['fecha_venc_pago'],
-                     'MonId' => 1,
+                     'ImpTotal' => $regfac['ImpTotal'],
+                     'ImpTotConc' => $regfac['ImpTotConc'],
+                     'ImpNeto' => $regfac['ImpNeto'],
+                     'ImpOpEx' => $regfac['ImpOpEx'],
+                     'ImpIVA' => $regfac['ImpIVA'],
+                     'ImpTrib' => $regfac['ImpTrib'],
+                     'FchVtoPago' => $regfac['FchVtoPago'],
+                     'MonId' => 'PES',
                      'MonCotiz' => 1,
-	                 'CbtesAsoc' => array(
-	                	'Tipo' => 0,
-	                	'PtoVta' => $ptovta,
-	                	'Nro' => 0
-	                  ),
-	                 'Tributos' => array(
-	                	'Id' => 0,
-	                	'Desc' => '',
-	                	'BaseImp' => 0,
-	                	'Alic' => 0,
-	                	'Importe' => 0
-	                  ),
-	                 'IVA' => array(
-	                	'Id' => 0,
-		               	'BaseImp' => 0,
-	                   	'Importe' => 0
-	                  )
 	                
                      )//FECAEDetRequest
                  )//FeDetReq

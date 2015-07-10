@@ -37,12 +37,12 @@ if($wsfe->openTA())
 else
 	echo "WSFE open TA Error";
 
-$wsfe->getTiposCbte();
-$wsfe->getTiposConcepto();
-$wsfe->getTiposIva();
-$wsfe->getTiposMonedas();
-$wsfe->getTiposTributos();
-$wsfe->getTiposDoc();
+//$wsfe->getTiposCbte();
+//$wsfe->getTiposConcepto();
+//$wsfe->getTiposIva();
+//$wsfe->getTiposMonedas();
+//$wsfe->getTiposTributos();
+//$wsfe->getTiposDoc();
 
  
  /* 
@@ -67,13 +67,24 @@ $regfac['fecha_venc_pago'] = date('Ymd');
 $cmp = $wsfe->recuperaLastCMP($ptovta, $tipocbte);
 if($cmp == false) echo "erorrrrrrr cmppp";
 
-$cae = $wsfe->aut($nro + 1, // ultimo ID mas uno 
-                $cmp + 1, // ultimo numero de  comprobante autorizado mas uno 
-                $ptovta,  // el punto de venta
-                $regfac // los datos a facturar
-     );
+*/
+
+$regfac['DocTipo'] = 80; //El cuit del comprador 
+$regfac['DocNro']  = 23111111112;
+$regfac['CbteDesde'] = 1;
+$regfac['CbteHasta'] = 2;
+$regfac['ImpTotal'] = 121.67; //La suma de todos los totales
+$regfac['ImpTotConc'] = 0; 
+$regfac['ImpNeto'] = 100.55;
+$regfac['ImpOpEx'] 0.0;
+$regfac['ImpIVA'] = 21.12;
+$regfac['ImpTrib'] = 0.0;
+$regfac['FchVtoPago'] = '20150709';
+
+$cae = $wsfe->aut( 2, 1, 1, $regfac);
+
 if($cae == false) echo "erorrrrrrr Caeee";
 
 print_r($cae);
-*/
+
 ?>

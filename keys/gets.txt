@@ -1,0 +1,711 @@
+
+2015-07-10T11:16:43.157-03:00WSFE open TA OKstdClass Object
+(
+    [FEParamGetTiposCbteResult] => stdClass Object
+        (
+            [ResultGet] => stdClass Object
+                (
+                    [CbteTipo] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [Id] => 1
+                                    [Desc] => Factura A
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [Id] => 2
+                                    [Desc] => Nota de Débito A
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [Id] => 3
+                                    [Desc] => Nota de Crédito A
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [3] => stdClass Object
+                                (
+                                    [Id] => 6
+                                    [Desc] => Factura B
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [4] => stdClass Object
+                                (
+                                    [Id] => 7
+                                    [Desc] => Nota de Débito B
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [5] => stdClass Object
+                                (
+                                    [Id] => 8
+                                    [Desc] => Nota de Crédito B
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [6] => stdClass Object
+                                (
+                                    [Id] => 4
+                                    [Desc] => Recibos A
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [7] => stdClass Object
+                                (
+                                    [Id] => 5
+                                    [Desc] => Notas de Venta al contado A
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [8] => stdClass Object
+                                (
+                                    [Id] => 9
+                                    [Desc] => Recibos B
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [9] => stdClass Object
+                                (
+                                    [Id] => 10
+                                    [Desc] => Notas de Venta al contado B
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [10] => stdClass Object
+                                (
+                                    [Id] => 63
+                                    [Desc] => Liquidacion A
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [11] => stdClass Object
+                                (
+                                    [Id] => 64
+                                    [Desc] => Liquidacion B
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [12] => stdClass Object
+                                (
+                                    [Id] => 34
+                                    [Desc] => Cbtes. A del Anexo I, Apartado A,inc.f),R.G.Nro. 1415
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [13] => stdClass Object
+                                (
+                                    [Id] => 35
+                                    [Desc] => Cbtes. B del Anexo I,Apartado A,inc. f),R.G. Nro. 1415
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [14] => stdClass Object
+                                (
+                                    [Id] => 39
+                                    [Desc] => Otros comprobantes A que cumplan con R.G.Nro. 1415
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [15] => stdClass Object
+                                (
+                                    [Id] => 40
+                                    [Desc] => Otros comprobantes B que cumplan con R.G.Nro. 1415
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [16] => stdClass Object
+                                (
+                                    [Id] => 60
+                                    [Desc] => Cta de Vta y Liquido prod. A
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [17] => stdClass Object
+                                (
+                                    [Id] => 61
+                                    [Desc] => Cta de Vta y Liquido prod. B
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [18] => stdClass Object
+                                (
+                                    [Id] => 11
+                                    [Desc] => Factura C
+                                    [FchDesde] => 20110330
+                                    [FchHasta] => NULL
+                                )
+
+                            [19] => stdClass Object
+                                (
+                                    [Id] => 12
+                                    [Desc] => Nota de Débito C
+                                    [FchDesde] => 20110330
+                                    [FchHasta] => NULL
+                                )
+
+                            [20] => stdClass Object
+                                (
+                                    [Id] => 13
+                                    [Desc] => Nota de Crédito C
+                                    [FchDesde] => 20110330
+                                    [FchHasta] => NULL
+                                )
+
+                            [21] => stdClass Object
+                                (
+                                    [Id] => 15
+                                    [Desc] => Recibo C
+                                    [FchDesde] => 20110330
+                                    [FchHasta] => NULL
+                                )
+
+                            [22] => stdClass Object
+                                (
+                                    [Id] => 49
+                                    [Desc] => Comprobante de Compra de Bienes Usados a Consumidor Final
+                                    [FchDesde] => 20130401
+                                    [FchHasta] => NULL
+                                )
+
+                            [23] => stdClass Object
+                                (
+                                    [Id] => 51
+                                    [Desc] => Factura M
+                                    [FchDesde] => 20150522
+                                    [FchHasta] => NULL
+                                )
+
+                            [24] => stdClass Object
+                                (
+                                    [Id] => 52
+                                    [Desc] => Nota de Débito M
+                                    [FchDesde] => 20150522
+                                    [FchHasta] => NULL
+                                )
+
+                            [25] => stdClass Object
+                                (
+                                    [Id] => 53
+                                    [Desc] => Nota de Crédito M
+                                    [FchDesde] => 20150522
+                                    [FchHasta] => NULL
+                                )
+
+                            [26] => stdClass Object
+                                (
+                                    [Id] => 54
+                                    [Desc] => Recibo M
+                                    [FchDesde] => 20150522
+                                    [FchHasta] => NULL
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+stdClass Object
+(
+    [FEParamGetTiposConceptoResult] => stdClass Object
+        (
+            [ResultGet] => stdClass Object
+                (
+                    [ConceptoTipo] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [Id] => 1
+                                    [Desc] => Producto
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [Id] => 2
+                                    [Desc] => Servicios
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [Id] => 3
+                                    [Desc] => Productos y Servicios
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+stdClass Object
+(
+    [FEParamGetTiposIvaResult] => stdClass Object
+        (
+            [ResultGet] => stdClass Object
+                (
+                    [IvaTipo] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [Id] => 3
+                                    [Desc] => 0%
+                                    [FchDesde] => 20090220
+                                    [FchHasta] => NULL
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [Id] => 4
+                                    [Desc] => 10.5%
+                                    [FchDesde] => 20090220
+                                    [FchHasta] => NULL
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [Id] => 5
+                                    [Desc] => 21%
+                                    [FchDesde] => 20090220
+                                    [FchHasta] => NULL
+                                )
+
+                            [3] => stdClass Object
+                                (
+                                    [Id] => 6
+                                    [Desc] => 27%
+                                    [FchDesde] => 20090220
+                                    [FchHasta] => NULL
+                                )
+
+                            [4] => stdClass Object
+                                (
+                                    [Id] => 8
+                                    [Desc] => 5%
+                                    [FchDesde] => 20141020
+                                    [FchHasta] => NULL
+                                )
+
+                            [5] => stdClass Object
+                                (
+                                    [Id] => 9
+                                    [Desc] => 2.5%
+                                    [FchDesde] => 20141020
+                                    [FchHasta] => NULL
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+stdClass Object
+(
+    [FEParamGetTiposMonedasResult] => stdClass Object
+        (
+            [ResultGet] => stdClass Object
+                (
+                    [Moneda] => stdClass Object
+                        (
+                            [Id] => PES
+                            [Desc] => Pesos Argentinos
+                            [FchDesde] => 20090403
+                            [FchHasta] => NULL
+                        )
+
+                )
+
+        )
+
+)
+stdClass Object
+(
+    [FEParamGetTiposTributosResult] => stdClass Object
+        (
+            [ResultGet] => stdClass Object
+                (
+                    [TributoTipo] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [Id] => 1
+                                    [Desc] => Impuestos nacionales
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [Id] => 2
+                                    [Desc] => Impuestos provinciales
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [Id] => 3
+                                    [Desc] => Impuestos municipales
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [3] => stdClass Object
+                                (
+                                    [Id] => 4
+                                    [Desc] => Impuestos Internos
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                            [4] => stdClass Object
+                                (
+                                    [Id] => 99
+                                    [Desc] => Otro
+                                    [FchDesde] => 20100917
+                                    [FchHasta] => NULL
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+stdClass Object
+(
+    [FEParamGetTiposDocResult] => stdClass Object
+        (
+            [ResultGet] => stdClass Object
+                (
+                    [DocTipo] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [Id] => 80
+                                    [Desc] => CUIT
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [Id] => 86
+                                    [Desc] => CUIL
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [Id] => 87
+                                    [Desc] => CDI
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [3] => stdClass Object
+                                (
+                                    [Id] => 89
+                                    [Desc] => LE
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [4] => stdClass Object
+                                (
+                                    [Id] => 90
+                                    [Desc] => LC
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [5] => stdClass Object
+                                (
+                                    [Id] => 91
+                                    [Desc] => CI Extranjera
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [6] => stdClass Object
+                                (
+                                    [Id] => 92
+                                    [Desc] => en trámite
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [7] => stdClass Object
+                                (
+                                    [Id] => 93
+                                    [Desc] => Acta Nacimiento
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [8] => stdClass Object
+                                (
+                                    [Id] => 95
+                                    [Desc] => CI Bs. As. RNP
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [9] => stdClass Object
+                                (
+                                    [Id] => 96
+                                    [Desc] => DNI
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [10] => stdClass Object
+                                (
+                                    [Id] => 94
+                                    [Desc] => Pasaporte
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [11] => stdClass Object
+                                (
+                                    [Id] => 0
+                                    [Desc] => CI Policía Federal
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [12] => stdClass Object
+                                (
+                                    [Id] => 1
+                                    [Desc] => CI Buenos Aires
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [13] => stdClass Object
+                                (
+                                    [Id] => 2
+                                    [Desc] => CI Catamarca
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [14] => stdClass Object
+                                (
+                                    [Id] => 3
+                                    [Desc] => CI Córdoba
+                                    [FchDesde] => 20080725
+                                    [FchHasta] => NULL
+                                )
+
+                            [15] => stdClass Object
+                                (
+                                    [Id] => 4
+                                    [Desc] => CI Corrientes
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [16] => stdClass Object
+                                (
+                                    [Id] => 5
+                                    [Desc] => CI Entre Ríos
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [17] => stdClass Object
+                                (
+                                    [Id] => 6
+                                    [Desc] => CI Jujuy
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [18] => stdClass Object
+                                (
+                                    [Id] => 7
+                                    [Desc] => CI Mendoza
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [19] => stdClass Object
+                                (
+                                    [Id] => 8
+                                    [Desc] => CI La Rioja
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [20] => stdClass Object
+                                (
+                                    [Id] => 9
+                                    [Desc] => CI Salta
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [21] => stdClass Object
+                                (
+                                    [Id] => 10
+                                    [Desc] => CI San Juan
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [22] => stdClass Object
+                                (
+                                    [Id] => 11
+                                    [Desc] => CI San Luis
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [23] => stdClass Object
+                                (
+                                    [Id] => 12
+                                    [Desc] => CI Santa Fe
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [24] => stdClass Object
+                                (
+                                    [Id] => 13
+                                    [Desc] => CI Santiago del Estero
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [25] => stdClass Object
+                                (
+                                    [Id] => 14
+                                    [Desc] => CI Tucumán
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [26] => stdClass Object
+                                (
+                                    [Id] => 16
+                                    [Desc] => CI Chaco
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [27] => stdClass Object
+                                (
+                                    [Id] => 17
+                                    [Desc] => CI Chubut
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [28] => stdClass Object
+                                (
+                                    [Id] => 18
+                                    [Desc] => CI Formosa
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [29] => stdClass Object
+                                (
+                                    [Id] => 19
+                                    [Desc] => CI Misiones
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [30] => stdClass Object
+                                (
+                                    [Id] => 20
+                                    [Desc] => CI Neuquén
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [31] => stdClass Object
+                                (
+                                    [Id] => 21
+                                    [Desc] => CI La Pampa
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [32] => stdClass Object
+                                (
+                                    [Id] => 22
+                                    [Desc] => CI Río Negro
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [33] => stdClass Object
+                                (
+                                    [Id] => 23
+                                    [Desc] => CI Santa Cruz
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [34] => stdClass Object
+                                (
+                                    [Id] => 24
+                                    [Desc] => CI Tierra del Fuego
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                            [35] => stdClass Object
+                                (
+                                    [Id] => 99
+                                    [Desc] => Doc. (Otro)
+                                    [FchDesde] => 20080728
+                                    [FchHasta] => NULL
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
