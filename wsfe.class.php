@@ -147,13 +147,7 @@ class WSFE {
     $results = $this->client->FEParamGetTiposDoc($params);
     
     //this->_checkErrors($results, 'FEParamGetTiposDoc');
-    var_dump($results);
-    $X=$results->FEParamGetTiposDocResult;
-    //$fh=fopen("TiposDoc.txt","w");
-    foreach ($X->ResultGet->DocTipo AS $Y) {
-      //fwrite($fh,sprintf("%5s %-30s\n",$Y->Id, $Y->Desc));
-      echo $Y->Id .' '.$Y->Desc;
-    }
+    print_r($results);
     //fclose($fh);
   }
   
