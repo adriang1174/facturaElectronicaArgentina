@@ -259,7 +259,8 @@ class WSFE {
                   'PtoVta' => $ptovta,
                   'CbteTipo' => $cbtetipo,
                   ),
-               'FeDetReq' => array(
+               'FeDetReq' => $cbtes
+               /*array(
                    'FECAEDetRequest' => array(
                      'Concepto' => 1,
                      'DocTipo' => $regfac['DocTipo'],
@@ -279,7 +280,7 @@ class WSFE {
                      'CbtesAsoc' => $cbtes
 	                
                      )//FECAEDetRequest
-                 )//FeDetReq
+                 )//FeDetReq */
        		)//FECAEReq
      )//FECAESolicitar
      );

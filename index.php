@@ -72,7 +72,7 @@ if($cmp == false) echo "erorrrrrrr cmppp";
 $regfac['DocTipo'] = 80; //El cuit del comprador 
 $regfac['DocNro']  = 23111111112;
 $regfac['CbteDesde'] = 1;
-$regfac['CbteHasta'] = 3;
+$regfac['CbteHasta'] = 1;
 $regfac['ImpTotal'] = 121.67; //La suma de todos los totales
 $regfac['ImpTotConc'] = 0; 
 $regfac['ImpNeto'] = 100.55;
@@ -81,8 +81,44 @@ $regfac['ImpIVA'] = 21.12;
 $regfac['ImpTrib'] = 0.0;
 $regfac['FchVtoPago'] = '20150709';
 
-$cbtes = array(array('Tipo'=>1,'PtoVta'=>1,'Nro'=>1),array('Tipo'=>1,'PtoVta'=>1,'Nro'=>2));
-$cae = $wsfe->aut( 2, 1, 1, $regfac,$cbtes);
+$cbtes = array(
+				array(
+                     'Concepto' => 1,
+                     'DocTipo' => $regfac['DocTipo'],
+                     'DocNro' => $regfac['DocNro'],
+	                 'CbteDesde' => 1,
+                     'CbteHasta' => 1,
+                     'CbteFch' => date('Ymd'),
+                     'ImpTotal' => $regfac['ImpTotal'],
+                     'ImpTotConc' => $regfac['ImpTotConc'],
+                     'ImpNeto' => $regfac['ImpNeto'],
+                     'ImpOpEx' => $regfac['ImpOpEx'],
+                     'ImpIVA' => $regfac['ImpIVA'],
+                     'ImpTrib' => $regfac['ImpTrib'],
+                     'FchVtoPago' => $regfac['FchVtoPago'],
+                     'MonId' => 'PES',
+                     'MonCotiz' => 1
+					 ),
+				array(
+                     'Concepto' => 1,
+                     'DocTipo' => $regfac['DocTipo'],
+                     'DocNro' => $regfac['DocNro'],
+	                 'CbteDesde' => 2,
+                     'CbteHasta' => 2,
+                     'CbteFch' => date('Ymd'),
+                     'ImpTotal' => $regfac['ImpTotal'],
+                     'ImpTotConc' => $regfac['ImpTotConc'],
+                     'ImpNeto' => $regfac['ImpNeto'],
+                     'ImpOpEx' => $regfac['ImpOpEx'],
+                     'ImpIVA' => $regfac['ImpIVA'],
+                     'ImpTrib' => $regfac['ImpTrib'],
+                     'FchVtoPago' => $regfac['FchVtoPago'],
+                     'MonId' => 'PES',
+                     'MonCotiz' => 1
+					 )					 
+             );
+
+$cae = $wsfe->aut( 2, 1, 1, $cbtes);
 
 //if($cae == false) echo "erorrrrrrr Caeee";
 
