@@ -283,9 +283,9 @@ class WSFE {
      )//FECAESolicitar
      );
     
-    $e = $this->_checkErrors($results, 'FEAutRequest');
+    $e = $this->_checkErrors($results, 'FECAESolicitar');
         
-    return $e == false ? Array( 'cae' => $results->FEAutRequestResult->FedResp->FEDetalleResponse->cae, 'fecha_vencimiento' => $results->FEAutRequestResult->FedResp->FEDetalleResponse->fecha_vto ): false;
+    return $e == false ? Array( 'cae' => $results->FECAESolicitarResult->FeDetResp->FEDetResponse->CAE, 'fecha_vencimiento' => $results->FECAESolicitarResult->FeDetResp->FEDetResponse->CAEFchVto ): false;
   }
 
 } // class
