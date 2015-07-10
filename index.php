@@ -95,9 +95,13 @@ $cbtes = array(
                      'ImpOpEx' => $regfac['ImpOpEx'],
                      'ImpIVA' => $regfac['ImpIVA'],
                      'ImpTrib' => $regfac['ImpTrib'],
-                     'FchVtoPago' => $regfac['FchVtoPago'],
                      'MonId' => 'PES',
-                     'MonCotiz' => 1
+                     'MonCotiz' => 1,
+                     'IVA' => array( 'AlicIva' => array( 'Id' => 5, //21%
+                     									'BaseImp' => $regfac['ImpNeto'],
+                     									'Importe' => $regfac['ImpIVA']
+                     									)
+                     				)
 					 ),
 				array(
                      'Concepto' => 1,
@@ -112,9 +116,13 @@ $cbtes = array(
                      'ImpOpEx' => $regfac['ImpOpEx'],
                      'ImpIVA' => $regfac['ImpIVA'],
                      'ImpTrib' => $regfac['ImpTrib'],
-                     'FchVtoPago' => $regfac['FchVtoPago'],
                      'MonId' => 'PES',
-                     'MonCotiz' => 1
+                     'MonCotiz' => 1,
+                     'IVA' => array( 'AlicIva' => array( 'Id' => 5, //21%
+                     									'BaseImp' => $regfac['ImpNeto'],
+                     									'Importe' => $regfac['ImpIVA']
+                     									)
+                     				)                     
 					 )					 
              );
 
