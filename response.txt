@@ -1,0 +1,72 @@
+2015-07-10T11:16:43.157-03:00WSFE open TA OKstdClass Object
+(
+    [FECAESolicitarResult] => stdClass Object
+        (
+            [FeCabResp] => stdClass Object
+                (
+                    [Cuit] => 20177397203
+                    [PtoVta] => 1
+                    [CbteTipo] => 1
+                    [FchProceso] => 20150710004616
+                    [CantReg] => 2
+                    [Resultado] => A
+                    [Reproceso] => N
+                )
+
+            [FeDetResp] => stdClass Object
+                (
+                    [FECAEDetResponse] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [Concepto] => 1
+                                    [DocTipo] => 80
+                                    [DocNro] => 23111111112
+                                    [CbteDesde] => 1
+                                    [CbteHasta] => 1
+                                    [CbteFch] => 20150710
+                                    [Resultado] => A
+                                    [Observaciones] => stdClass Object
+                                        (
+                                            [Obs] => stdClass Object
+                                                (
+                                                    [Code] => 10017
+                                                    [Msg] => Factura individual, DocTipo: 80, DocNro 23111111112 no se encuentra registrado en los padrones de AFIP.
+                                                )
+
+                                        )
+
+                                    [CAE] => 65283272524798
+                                    [CAEFchVto] => 20150720
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [Concepto] => 1
+                                    [DocTipo] => 80
+                                    [DocNro] => 23111111112
+                                    [CbteDesde] => 2
+                                    [CbteHasta] => 2
+                                    [CbteFch] => 20150710
+                                    [Resultado] => A
+                                    [Observaciones] => stdClass Object
+                                        (
+                                            [Obs] => stdClass Object
+                                                (
+                                                    [Code] => 10017
+                                                    [Msg] => Factura individual, DocTipo: 80, DocNro 23111111112 no se encuentra registrado en los padrones de AFIP.
+                                                )
+
+                                        )
+
+                                    [CAE] => 65283272524803
+                                    [CAEFchVto] => 20150720
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
