@@ -76,7 +76,7 @@ $regfac['CbteHasta'] = 2;
 $regfac['ImpTotal'] = 121.67; //La suma de todos los totales
 $regfac['ImpTotConc'] = 0; 
 $regfac['ImpNeto'] = 100.55;
-$regfac['ImpOpEx'] 0.0;
+$regfac['ImpOpEx'] = 0.0;
 $regfac['ImpIVA'] = 21.12;
 $regfac['ImpTrib'] = 0.0;
 $regfac['FchVtoPago'] = '20150709';
