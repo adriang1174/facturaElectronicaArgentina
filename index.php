@@ -83,7 +83,7 @@ $regfac['FchVtoPago'] = '20150709';
 
 $cae = $wsfe->aut( 2, 1, 1, $regfac);
 
-if($cae == false) echo "erorrrrrrr Caeee";
+//if($cae == false) echo "erorrrrrrr Caeee";
 
 print_r($cae);
 

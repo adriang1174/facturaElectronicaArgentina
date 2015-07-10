@@ -283,9 +283,10 @@ class WSFE {
      )//FECAESolicitar
      );
     
-    $e = $this->_checkErrors($results, 'FECAESolicitar');
+    //$e = $this->_checkErrors($results, 'FECAESolicitar');
         
-    return $e == false ? Array( 'cae' => $results->FECAESolicitarResult->FeDetResp->FEDetResponse->CAE, 'fecha_vencimiento' => $results->FECAESolicitarResult->FeDetResp->FEDetResponse->CAEFchVto ): false;
+    //return $e == false ? Array( 'cae' => $results->FECAESolicitarResult->FeDetResp->FEDetResponse->CAE, 'fecha_vencimiento' => $results->FECAESolicitarResult->FeDetResp->FEDetResponse->CAEFchVto ): false;
+    return $results;
   }
 
 } // class
