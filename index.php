@@ -72,7 +72,7 @@ if($cmp == false) echo "erorrrrrrr cmppp";
 $regfac['DocTipo'] = 80; //El cuit del comprador 
 $regfac['DocNro']  = 23111111112;
 $regfac['CbteDesde'] = 1;
-$regfac['CbteHasta'] = 2;
+$regfac['CbteHasta'] = 3;
 $regfac['ImpTotal'] = 121.67; //La suma de todos los totales
 $regfac['ImpTotConc'] = 0; 
 $regfac['ImpNeto'] = 100.55;
