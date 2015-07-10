@@ -81,7 +81,7 @@ $regfac['ImpIVA'] = 21.12;
 $regfac['ImpTrib'] = 0.0;
 $regfac['FchVtoPago'] = '20150709';
 
-$cbtes = array(array('Tipo'=>1,'PtoVta'=>1,'Nro'=>1),array('Tipo'=>1,'PtoVta'=>1,'Nro'=>1));
+$cbtes = array(array('Tipo'=>1,'PtoVta'=>1,'Nro'=>1),array('Tipo'=>1,'PtoVta'=>1,'Nro'=>2));
 $cae = $wsfe->aut( 2, 1, 1, $regfac,$cbtes);
 
 //if($cae == false) echo "erorrrrrrr Caeee";
