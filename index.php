@@ -11,15 +11,15 @@ require 'wsfe.class.php';
 $wsaa = new WSAA('./'); 
 
 
-//if($wsaa->get_expiration() < date("Y-m-d h:m:i")) {
+if($wsaa->get_expiration() < date("Y-m-d h:m:i")) {
   if ($wsaa->generar_TA()) {
     echo 'obtenido nuevo TA';  
   } else {
     echo 'error al obtener el TA';
   }
-//} else {
-//  echo $wsaa->get_expiration();
-//};
+} else {
+  echo $wsaa->get_expiration();
+};
 
 
 
@@ -37,9 +37,9 @@ if($wsfe->openTA())
 else
 	echo "WSFE open TA Error";
 
-//$wsfe->getTiposDoc();
+$wsfe->getTiposDoc();
  
-  
+ /* 
 // devuelve el cae
 $ptovta = 1; 
 $tipocbte = 1;
@@ -69,5 +69,5 @@ $cae = $wsfe->aut($nro + 1, // ultimo ID mas uno
 if($cae == false) echo "erorrrrrrr Caeee";
 
 print_r($cae);
-
+*/
 ?>

@@ -106,49 +106,34 @@ class WSFE {
    */
   public function recuperaQTY()
   {
-    $results = $this->client->FERecuperaQTYRequest(
-      array('argAuth'=>array('Token' => $this->TA->credentials->token,
+    $results = $this->client->FECompTotXRequest(
+      array('Auth'=>array('Token' => $this->TA->credentials->token,
                               'Sign' => $this->TA->credentials->sign,
-                              'cuit' => self::CUIT)));
+                              'Cuit' => self::CUIT)));
     
-    $e = $this->_checkErrors($results, 'FERecuperaQTYRequest');
+    $e = $this->_checkErrors($results, 'FECompTotXRequest');
         
-    return $e == false ? $results->FERecuperaQTYRequestResult->qty->value : false;
+    return $e == false ? $results->FECompTotXRequestResult->RegXReq : false;
   }
 
-  /*
-   * Retorna el ultimo número de Request.
-   */ 
-  public function ultNro()
-  {
-    $results = $this->client->FEUltNroRequest(
-      array('argAuth'=>array('Token' => $this->TA->credentials->token,
-                              'Sign' => $this->TA->credentials->sign,
-                              'cuit' => self::CUIT)));
-    
-    var_dump($results);
-    $e = $this->_checkErrors($results, 'FEUltNroRequest');
-        
-    return $e == false ? $results->FEUltNroRequestResult->nro->value : false;
-  }
+
   
   /*
    * Retorna el ultimo comprobante autorizado para el tipo de comprobante /cuit / punto de venta ingresado.
    */ 
   public function recuperaLastCMP ($ptovta)
   {
-    //$results = $this->client->FERecuperaLastCMPRequest(
-     $results = $this->client->FECompUltimoAutorizado(
-     array('argAuth' =>  array('Token'    => $this->TA->credentials->token,
+    $results = $this->client->FECompUltimoAutorizado(
+     array('Auth' =>  array('Token'    => $this->TA->credentials->token,
                                 'Sign'     => $this->TA->credentials->sign,
-                                'cuit'     => self::CUIT),
-             'argTCMP' => array('PtoVta'   => $ptovta,
-                                'TipoCbte' => $this->tipo_cbte)));
-                                
-    var_dump($results);
-    $e = $this->_checkErrors($results, 'FERecuperaLastCMPRequest');
-    
-    return $e == false ? $results->FERecuperaLastCMPRequestResult->cbte_nro : false;
+                                'Cuit'     => self::CUIT),
+             'PtoVta'   => $ptovta,
+             'CbteTipo' => $this->tipo_cbte));
+
+    //var_dump($results);
+    $e = $this->_checkErrors($results, 'FECompUltimoAutorizado');
+
+    return $e == false ? $results->FECompUltimoAutorizadoResult->CbteNro : false;
   }
   
   /*
@@ -196,39 +181,58 @@ class WSFE {
   }
 
   // Dado un lote de comprobantes retorna el mismo autorizado con el CAE otorgado.
-  public function aut($ID, $cbte, $ptovta, $regfac)
+  public function aut( $cbte, $ptovta, $regfac)
   {
-    $results = $this->client->FEAutRequest(
-      array('argAuth' => array(
+    $results = $this->client->FECAESolicitar(
+      array('Auth' => array(
                'Token' => $this->TA->credentials->token,
                'Sign'  => $this->TA->credentials->sign,
-               'cuit'  => self::CUIT),
-            'Fer' => array(
-               'Fecr' => array(
-                  'id' => $ID, 
-                  'cantidadreg' => 1, 
-                  'presta_serv' => 0
-                ),
-               'Fedr' => array(
-                  'FEDetalleRequest' => array(
-                     'tipo_doc' => $regfac['tipo_doc'],
-                     'nro_doc' => $regfac['nro_doc'],
-                     'tipo_cbte' => $this->tipo_cbte,
-                     'punto_vta' => $ptovta,
-                     'cbt_desde' => $cbte,
-                     'cbt_hasta' => $cbte,
-                     'imp_total' => $regfac['imp_total'],
-                     'imp_tot_conc' => $regfac['imp_tot_conc'],
-                     'imp_neto' => $regfac['imp_neto'],
-                     'impto_liq' => $regfac['impto_liq'],
-                     'impto_liq_rni' => $regfac['impto_liq_rni'],
-                     'imp_op_ex' => $regfac['imp_op_ex'],
-                     'fecha_cbte' => date('Ymd'),
-                     'fecha_venc_pago' => $regfac['fecha_venc_pago']
-                   )
-                )
-              )
-       )
+               'Cuit'  => self::CUIT),
+            'FeCAEReq' => array(
+               'FeCabReq' => array(
+                  'CantReg' => 1, 
+                  'PtoVta' => $ptovta,
+                  'CbteTipo' => $cbte,
+                  ),
+               'FeDetReq' => array(
+                   'FECAEDetRequest' => array(
+                     'Concepto' => 1,
+                     'DocTipo' => $regfac['tipo_doc'],
+                     'DocNro' => $regfac['nro_doc'],
+	                 'CbteDesde' => $cbte,
+                     'CbteHasta' => $cbte,
+                     'CbteFch' => date('Ymd'),
+                     'ImpTotal' => $regfac['imp_total'],
+                     'ImpTotConc' => $regfac['imp_tot_conc'],
+                     'ImpNeto' => $regfac['imp_neto'],
+                     'ImpOpEx' => $regfac['imp_op_ex'],
+                     'ImpIVA' => $regfac['impto_liq'],
+                     'ImpTrib' => $regfac['impto_liq_rni'],
+                     'FchVtoPago' => $regfac['fecha_venc_pago'],
+                     'MonId' => 1,
+                     'MonCotiz' => 1,
+	                 'CbtesAsoc' => array(
+	                	'Tipo' =>,
+	                	'PtoVta' => $ptovta,
+	                	'Nro' =>
+	                  ),
+	                 'Tributos' => array(
+	                	'Id' =>,
+	                	'Desc' =>,
+	                	'BaseImp' =>,
+	                	'Alic' =>,
+	                	'Importe' =>
+	                  ),
+	                 'IVA' => array(
+	                	'Id' =>,
+		               	'BaseImp' =>,
+	                   	'Importe' =>
+	                  )
+	                
+                     )//FECAEDetRequest
+                 )//FeDetReq
+       		)//FECAEReq
+     )//FECAESolicitar
      );
     
     $e = $this->_checkErrors($results, 'FEAutRequest');
