@@ -245,7 +245,7 @@ class WSFE {
   }
 
   // Dado un lote de comprobantes retorna el mismo autorizado con el CAE otorgado.
-  public function aut( $cantreg, $cbtetipo, $ptovta, $regfac,$cbtes)
+  public function aut( $cantreg, $cbtetipo, $ptovta,$cbtes)
   { 
     
     $results = $this->client->FECAESolicitar(
