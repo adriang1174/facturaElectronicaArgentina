@@ -150,7 +150,77 @@ class WSFE {
     print_r($results);
     //fclose($fh);
   }
+
+  /*
+   * Obtiene los tipos de Comprobante
+   */
+  public function getTiposCbte()
+  {
+    $params->Auth->Token = $this->TA->credentials->token;
+    $params->Auth->Sign = $this->TA->credentials->sign;
+    $params->Auth->Cuit = self::CUIT;
+    $results = $this->client->FEParamGetTiposCbte($params);
+    
+    //this->_checkErrors($results, 'FEParamGetTiposDoc');
+    print_r($results);
+    //fclose($fh);
+  }
+
+  /*
+   * Obtiene los tipos de Concepto
+   */
+  public function getTiposConcepto()
+  {
+    $params->Auth->Token = $this->TA->credentials->token;
+    $params->Auth->Sign = $this->TA->credentials->sign;
+    $params->Auth->Cuit = self::CUIT;
+    $results = $this->client->FEParamGetTiposConcepto($params);
+    
+    //this->_checkErrors($results, 'FEParamGetTiposDoc');
+    print_r($results);
+    //fclose($fh);
+  }
   
+  /*
+   * Obtiene los tipos de IVA
+   */
+  public function getTiposIva()
+  {
+    $params->Auth->Token = $this->TA->credentials->token;
+    $params->Auth->Sign = $this->TA->credentials->sign;
+    $params->Auth->Cuit = self::CUIT;
+    $results = $this->client->FEParamGetTiposIva($params);
+    
+    //this->_checkErrors($results, 'FEParamGetTiposDoc');
+    print_r($results);
+    //fclose($fh);
+  }
+  
+  /*
+   * Obtiene los tipos de Monedas
+   */
+  public function getTiposMonedas()
+  {
+    $params->Auth->Token = $this->TA->credentials->token;
+    $params->Auth->Sign = $this->TA->credentials->sign;
+    $params->Auth->Cuit = self::CUIT;
+    $results = $this->client->FEParamGetTiposMonedas($params);
+    
+    print_r($results);
+  }
+  /*
+   * Obtiene los tipos de Tributos
+   */
+  public function getTiposTributos()
+  {
+    $params->Auth->Token = $this->TA->credentials->token;
+    $params->Auth->Sign = $this->TA->credentials->sign;
+    $params->Auth->Cuit = self::CUIT;
+    $results = $this->client->FEParamGetTiposTributos($params);
+    
+    print_r($results);
+  }
+
   /**
    * Setea el tipo de comprobante
    * A = 1

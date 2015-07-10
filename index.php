@@ -37,7 +37,13 @@ if($wsfe->openTA())
 else
 	echo "WSFE open TA Error";
 
+$wsfe->getTiposCbte();
+$wsfe->getTiposConcepto();
+$wsfe->getTiposIva();
+$wsfe->getTiposMonedas();
+$wsfe->getTiposTributos();
 $wsfe->getTiposDoc();
+
  
  /* 
 // devuelve el cae
